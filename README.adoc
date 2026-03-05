@@ -7,7 +7,7 @@
 
 // Add a short description of your project. Tell what your project does and what it's used for.
 
-This project provides the com.teragrep.stb_01.Stubable interface to be used in another components to provide the Stub object functionality.
+This project provides the Stubable interface to be used in another components to provide the Stub object functionality.
 
 == Features
 
@@ -31,7 +31,8 @@ mvn clean package
 
 [source,java]
 ----
-import com.teragrep.stb_01.Stubable;public class SomeClass implements Stubable {
+import com.teragrep.stb_01.Stubable;
+public class SomeClass implements Stubable {
     // Implement SomeClass here
 }
 ----
