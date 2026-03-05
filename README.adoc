@@ -3,33 +3,44 @@
 // 2. Update the issues link in Contributing section in the readme file
 // 3. Update the discussion link in config.yml file in .github/ISSUE_TEMPLATE directory
 
-= repo-template
+= Teragrep Stub Library for Java
 
 // Add a short description of your project. Tell what your project does and what it's used for.
 
-This is a template repository for Teragrep organization.
+This project provides the com.teragrep.stb_01.Stubable interface to be used in another components to provide the Stub object functionality.
 
 == Features
 
 // List your project's features
+- Unified interface for all Stubables
+- Compatible stub checks across dependencies
 
 == Documentation
 
 See the official documentation on https://docs.teragrep.com[docs.teragrep.com].
 
-== Limitations
-
-// If your project has limitations, please list them. Otherwise remove this section.
-
-== How to [compile/use/implement]
+== How to compile
 
 // add instructions how people can start to use your project
+[source,bash]
+----
+mvn clean package
+----
+
+== How to use
+
+[source,java]
+----
+import com.teragrep.stb_01.Stubable;public class SomeClass implements Stubable {
+    // Implement SomeClass here
+}
+----
 
 == Contributing
 
 // Change the repository name in the issues link to match with your project's name
 
-You can involve yourself with our project by https://github.com/teragrep/repo-template/issues/new/choose[opening an issue] or submitting a pull request.
+You can involve yourself with our project by https://github.com/teragrep/stb_01/issues/new/choose[opening an issue] or submitting a pull request.
 
 Contribution requirements:
 
